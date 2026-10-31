@@ -1,7 +1,7 @@
 # SAS-BLUP: Spectral Adaptive Shrinkage BLUP
 
-Code and stored results for the paper *Spectral Adaptive Shrinkage BLUP for Genomic Prediction: Theory, a Diagnostic
-Test, and Its Limits* by Md. Salehin Seyam, Abdur Rahman and Zhaohua Peng.
+Code and stored results for the paper *Spectral Adaptive Shrinkage BLUP for Genomic Prediction: A Likelihood-Ratio
+Test of the GBLUP Assumption and a Multi-Panel Evaluation* by Md. Salehin Seyam, Abdur Rahman and Zhaohua Peng.
 
 GBLUP (equivalently rrBLUP) shrinks each eigenvector of the genomic relationship matrix (GRM) by a fixed rule. SAS-BLUP
 learns this shrinkage with a two-parameter power filter and chooses between the filter and rrBLUP on held-out data. A
