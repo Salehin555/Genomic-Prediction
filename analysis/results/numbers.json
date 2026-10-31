@@ -6938,5 +6938,41 @@
   "text": "0.046",
   "claim": "K7",
   "source": "loo_bias_example.json"
+ },
+ "equiv_bh.safe.0.005": {
+  "value": 18,
+  "text": "18",
+  "claim": "K16",
+  "source": "e4_*_kfold_spectral.json"
+ },
+ "equiv_bh.safe.0.01": {
+  "value": 47,
+  "text": "47",
+  "claim": "K16",
+  "source": "e4_*_kfold_spectral.json"
+ },
+ "equiv_bh.safe.0.02": {
+  "value": 57,
+  "text": "57",
+  "claim": "K16",
+  "source": "e4_*_kfold_spectral.json"
+ },
+ "equiv_bh.power.0.005": {
+  "value": 4,
+  "text": "4",
+  "claim": "K16",
+  "source": "e4_*_kfold_spectral.json"
+ },
+ "equiv_bh.power.0.01": {
+  "value": 14,
+  "text": "14",
+  "claim": "K16",
+  "source": "e4_*_kfold_spectral.json"
+ },
+ "equiv_bh.power.0.02": {
+  "value": 49,
+  "text": "49",
+  "claim": "K16",
+  "source": "e4_*_kfold_spectral.json"
  }
 }

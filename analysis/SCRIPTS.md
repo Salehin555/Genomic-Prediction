@@ -26,10 +26,29 @@ from `results/e7_stability.json`; every other number needs only the stored resul
 `fig2_regime_map.py` and `fig_theory_sim_test.py` also need `analysis/data/mice.RData` (BGLR), and panel b of Fig. 2
 needs the rice GRM; the other figures need only the stored results.
 
-The stored simulation (`results/e1_regimes.json`, 2,760 data sets) was produced in two steps: a first run of 200 data
-sets at n = 1,600, then `python e1_regimes.py 25 10`, which skips data sets already present (its log reports "200
-done, 2560 to run"). Run from scratch, the same command gives 2,640 data sets; the replicate counts are listed in
-Section 4.2 of the paper. The figure files keep their working names. In the paper they are numbered as follows: `fig1_method_flow`
+## Rebuilding the paper versus rerunning the experiments
+
+Rebuilding uses the stored results: `make_numbers.py` and the figure scripts recreate every number, table and figure
+in minutes. Rerunning recomputes the stored results themselves, one experiment script at a time, and takes hours.
+
+The simulation (`results/e1_regimes.json`, 2,760 data sets) is deterministic. Each data set is fixed by its seed,
+which is 20000 plus its position in the design built with REPS = 25; `results/e1_design.json` lists the 2,760 seeds.
+To regenerate exactly these data sets from scratch, delete `analysis/results/e1_regimes.partial.json` if it exists
+(the script resumes from it), then run:
+
+```
+cd analysis
+python e1_regimes.py 25 25 --exact
+```
+
+The design has 25 replicates per heritability for every scenario at n = 100 to 800. At n = 1,600 it has 25 for
+gamma = 0.5 and 0.75, 25, 25 and 10 for gamma = 1 (heritability 0.3, 0.5 and 0.7), and 10 for the other scenarios
+(Section 4.2 of the paper). The stored file came from a first run that finished 200 data sets at n = 1,600 and was
+then stopped, followed by `python e1_regimes.py 25 10`, which skips the data sets already done (its log reports "200
+done, 2560 to run"); both steps used the same seeds. Recomputed data sets match the stored ones to within 1e-8 in
+R2 (checked on a sample).
+
+The figure files keep their working names. In the paper they are numbered as follows: `fig1_method_flow`
 Fig. 1, `fig3_theory` Fig. 2, `fig4_simulation` Fig. 3, `fig5_test_calibration` Fig. 4, `fig6_gamma_real` Fig. 5,
 `fig7_gains_real` Fig. 6, `fig8_oracle_gap` Fig. 7, `fig2_regime_map` Fig. 8, `fig9_mouse` Fig. 9, `figS3_gibbs`
 Fig. S1, `figS1_loo_ablation` Fig. S2 and `figS2_runtime` Fig. S3.

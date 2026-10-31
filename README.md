@@ -35,7 +35,9 @@ python fig_real.py              # Figs. 5 to 7 and 9
 python fig_workflow_supp.py     # Supplementary Figs. S1 to S3
 ```
 
-Each script states its usage in its first lines. Rerunning an experiment from raw data needs the data below.
+Each script states its usage in its first lines. These commands rebuild the numbers and figures from the stored
+results in minutes; rerunning an experiment recomputes its results, takes hours and needs the data below.
+[`analysis/SCRIPTS.md`](analysis/SCRIPTS.md) gives the exact command that regenerates the 2,760 simulated data sets.
 
 ## Data
 

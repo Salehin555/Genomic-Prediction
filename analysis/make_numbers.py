@@ -729,6 +729,23 @@ def audit_checks3():
             put("bias_ex.excess", x["excess"], f"{x['excess']:.3f}", "K7", "loo_bias_example.json")
 
 
+def audit_checks4():
+    """Equivalence with multiplicity adjustment: TOST p-values from the corrected resampled t-test, adjusted by
+    Benjamini-Hochberg within each panel and method (as the difference tests are)."""
+    for m, lab in (("safe_CV", "safe"), ("power_CV", "power")):
+        for mg in (0.005, 0.01, 0.02):
+            k_raw = k_bh = 0
+            for ds in ("rice", "wheat", "mice", "rdp1", "sorghum"):
+                ps = []
+                for T in by_trait(f"e4_{ds}_kfold_spectral.json").values():
+                    d = np.array(T["r2"][m]) - np.array(T["r2"]["rrBLUP_CV"]); J_ = len(d)
+                    se = max(np.sqrt((1 / J_ + 0.25) * d.var(ddof=1)), 1e-6)
+                    ps.append(max(stats.t.sf((d.mean() + mg) / se, J_ - 1), stats.t.cdf((d.mean() - mg) / se, J_ - 1)))
+                k_raw += sum(p < .05 for p in ps); k_bh += sum(q < .05 for q in bh(ps))
+            assert k_raw == NUM[f"equiv.{lab}.{mg}"]["value"], (lab, mg)   # same rule as the 90% interval
+            put(f"equiv_bh.{lab}.{mg}", int(k_bh), str(int(k_bh)), "K16", "e4_*_kfold_spectral.json")
+
+
 if __name__ == "__main__":
     try:
         sys.stdout.reconfigure(encoding="utf-8")   # the minus signs print on any console
@@ -736,7 +753,7 @@ if __name__ == "__main__":
         pass
     for fn in (e1, reml_test, real, other, panels, practical, small_n_close_eigs, adjustment, panels_r22, baselines,
                practical_rice_structure, epistatic_mice, stability_power, robustness_checks, audit_checks,
-               audit_checks2, audit_checks3): fn()
+               audit_checks2, audit_checks3, audit_checks4): fn()
     json.dump(NUM, open(os.path.join(RES, "numbers.json"), "w", encoding="utf-8"), indent=1, ensure_ascii=False)
     for k, v in NUM.items(): print(f"{k:45s} = {v['text']}")
     print(f"\n{len(NUM)} numbers written to results/numbers.json")

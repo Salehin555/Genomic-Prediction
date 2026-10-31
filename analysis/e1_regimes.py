@@ -52,12 +52,21 @@ def run(cfg):
 
 
 if __name__ == "__main__":
-    # usage: python e1_regimes.py REPS [REPS_N1600]; resumes from results/e1_regimes.partial.json if present
-    reps = int(sys.argv[1]) if len(sys.argv) > 1 else 30
-    reps_big = int(sys.argv[2]) if len(sys.argv) > 2 else reps
+    # usage: python e1_regimes.py REPS [REPS_N1600] [--exact]; resumes from results/e1_regimes.partial.json if present
+    # --exact (with REPS = 25) runs exactly the 2,760 data sets of the paper, whose seeds are in results/e1_design.json
+    exact = "--exact" in sys.argv
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    reps = int(args[0]) if args else 30
+    reps_big = int(args[1]) if len(args) > 1 else reps
     cf = [dict(scn=s, n=n, h2=h2, rep=r) for s in SCENARIOS for n in (100, 200, 400, 800, 1600)
           for h2 in (0.3, 0.5, 0.7) for r in range(reps)]
-    for i, c in enumerate(cf): c["seed"] = 20000 + i
+    for i, c in enumerate(cf): c["seed"] = 20000 + i      # each data set is fixed by its seed
+    if exact:
+        if reps != 25:
+            sys.exit("--exact needs REPS = 25: the seeds of the paper's data sets are positions in that design")
+        want = set(json.load(open(os.path.join(HERE, "results", "e1_design.json"))))
+        cf = [c for c in cf if c["seed"] in want]; reps_big = reps
+        assert len(cf) == len(want) == 2760
     part = os.path.join(HERE, "results", "e1_regimes.partial.json")
     res = json.load(open(part)) if os.path.exists(part) else []
     done = {r["seed"] for r in res}
