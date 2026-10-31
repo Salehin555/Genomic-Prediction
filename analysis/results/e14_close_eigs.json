@@ -1,0 +1,53 @@
+[
+ {
+  "panel": "rice",
+  "n": 191,
+  "markers": 28368,
+  "rho_eff": 10,
+  "n_top": 10,
+  "n_close": 0,
+  "L_h": 1.429085582342168,
+  "max_lip_ratio": 0.48173558795006854,
+  "bound_holds": true,
+  "rel_change_G": 0.005660227495084491,
+  "rel_change_power": 0.020362342646709934,
+  "rel_change_grouped": 0.03046854477461281,
+  "eigvec_cos_close": null,
+  "eigvec_cos_far": 0.9996012137657804,
+  "B": 20
+ },
+ {
+  "panel": "wheat",
+  "n": 599,
+  "markers": 1278,
+  "rho_eff": 42,
+  "n_top": 42,
+  "n_close": 7,
+  "L_h": 3.2115060834000815,
+  "max_lip_ratio": 0.38344942041394375,
+  "bound_holds": true,
+  "rel_change_G": 0.05820536640228893,
+  "rel_change_power": 0.11987177527123268,
+  "rel_change_grouped": 0.12144042800309071,
+  "eigvec_cos_close": 0.7495546833838747,
+  "eigvec_cos_far": 0.9289427962741315,
+  "B": 20
+ },
+ {
+  "panel": "mice",
+  "n": 1814,
+  "markers": 10346,
+  "rho_eff": 97,
+  "n_top": 97,
+  "n_close": 57,
+  "L_h": 6.442462175129407,
+  "max_lip_ratio": 0.321734536206609,
+  "bound_holds": true,
+  "rel_change_G": 0.03212370013765263,
+  "rel_change_power": 0.06405379388030875,
+  "rel_change_grouped": 0.06465551072195065,
+  "eigvec_cos_close": 0.8811773302250625,
+  "eigvec_cos_far": 0.9832241616038999,
+  "B": 20
+ }
+]

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+analysis/data/*.RData
+analysis/data/*.npy
+analysis/work/
+/data/

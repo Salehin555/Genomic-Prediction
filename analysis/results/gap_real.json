@@ -1,0 +1,429 @@
+[
+ {
+  "dataset": "rice",
+  "trait": "ht_cm_Yan_et_al_2007",
+  "gamma": 0.8167444696294698,
+  "h2": 0.5959024674835945,
+  "gap_r2": 0.0006309471023368638
+ },
+ {
+  "dataset": "rice",
+  "trait": "Brown_Grain_Length_mm",
+  "gamma": 1.3269323843579173,
+  "h2": 0.8267831032202856,
+  "gap_r2": 0.0007550001285307473
+ },
+ {
+  "dataset": "rice",
+  "trait": "Brown_Grain_Width_mm",
+  "gamma": 1.1140456560482743,
+  "h2": 0.5268038736714924,
+  "gap_r2": 0.00019651290631241764
+ },
+ {
+  "dataset": "rice",
+  "trait": "Brown_Grain_L/Wratio",
+  "gamma": 1.4352430661085984,
+  "h2": 0.866846585233846,
+  "gap_r2": 0.000998805704300198
+ },
+ {
+  "dataset": "wheat",
+  "trait": "Env1",
+  "gamma": 0.9255939386384898,
+  "h2": 0.5038761833379403,
+  "gap_r2": 0.0001575515780545584
+ },
+ {
+  "dataset": "wheat",
+  "trait": "Env2",
+  "gamma": 0.8896504619456416,
+  "h2": 0.45637302090121085,
+  "gap_r2": 0.0003613706747472241
+ },
+ {
+  "dataset": "wheat",
+  "trait": "Env4",
+  "gamma": 0.5788027362940358,
+  "h2": 0.5481875769989693,
+  "gap_r2": 0.008083353149594094
+ },
+ {
+  "dataset": "wheat",
+  "trait": "Env5",
+  "gamma": 0.7458089181013028,
+  "h2": 0.47139367806924415,
+  "gap_r2": 0.0023488728996049323
+ },
+ {
+  "dataset": "mice",
+  "trait": "Obesity.BMI",
+  "gamma": 0.8675014617336143,
+  "h2": 0.17462704922606284,
+  "gap_r2": 0.000302736190948178
+ },
+ {
+  "dataset": "mice",
+  "trait": "Obesity.BodyLength",
+  "gamma": 0.6920970642231216,
+  "h2": 0.2836090576222298,
+  "gap_r2": 0.0029316881012824395
+ },
+ {
+  "dataset": "mice",
+  "trait": "Obesity.EndNormalBW",
+  "gamma": 0.7835511000821548,
+  "h2": 0.35764119898596414,
+  "gap_r2": 0.0014358258241043205
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Albumin",
+  "gamma": 1.222034313711719,
+  "h2": 0.11029106038332154,
+  "gap_r2": 0.000429180814104626
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.ALP",
+  "gamma": 1.0498437430366325,
+  "h2": 0.5680705530944925,
+  "gap_r2": 5.6672316281206116e-05
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.ALT",
+  "gamma": 0.9565853967415777,
+  "h2": 0.07592304369977428,
+  "gap_r2": 1.5281799860271612e-05
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.AST",
+  "gamma": 0.7832893446896114,
+  "h2": 0.07039100097022881,
+  "gap_r2": 0.0003836172382732466
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Calcium",
+  "gamma": 0.49347798898057443,
+  "h2": 0.30934853417675473,
+  "gap_r2": 0.011211862062169007
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Chloride",
+  "gamma": 0.45472999748336884,
+  "h2": 0.2995584052025795,
+  "gap_r2": 0.013309651370419059
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Creatinine",
+  "gamma": 0.1576381662408177,
+  "h2": 0.9999999361901318,
+  "gap_r2": 1.6159563615797255e-10
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Glucose",
+  "gamma": 1.0838815146320575,
+  "h2": 0.2414729566119448,
+  "gap_r2": 0.0001191359766593632
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.HDL",
+  "gamma": 0.8413176017524017,
+  "h2": 0.45212489227889596,
+  "gap_r2": 0.0008041710727212977
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.LDL",
+  "gamma": 0.8450066994967135,
+  "h2": 0.33561161515028004,
+  "gap_r2": 0.0006751866786650676
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Phosphorous",
+  "gamma": 0.5852483337071166,
+  "h2": 0.30635746386713003,
+  "gap_r2": 0.006607099410424164
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Sodium",
+  "gamma": 0.3397592256149861,
+  "h2": 0.3760100529031324,
+  "gap_r2": 0.02698571138946381
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Tot.Cholesterol",
+  "gamma": 0.7999330203838059,
+  "h2": 0.3311386109214952,
+  "gap_r2": 0.0011875332619523734
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Tot.Protein",
+  "gamma": 0.7102442240079098,
+  "h2": 0.1594811481876007,
+  "gap_r2": 0.0016200202629940246
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Triglycerides",
+  "gamma": 0.5138260460710735,
+  "h2": 0.3880402580560378,
+  "gap_r2": 0.01162796752623489
+ },
+ {
+  "dataset": "mice",
+  "trait": "Biochem.Urea",
+  "gamma": 1.4238361016487497,
+  "h2": 0.14375509082331442,
+  "gap_r2": 0.0014959199915336686
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Flowering time at Arkansas",
+  "gamma": 1.0392351597080451,
+  "h2": 0.8058937821490884,
+  "gap_r2": 2.0150650330755493e-05
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Flowering time at Faridpur",
+  "gamma": 1.4178196094273505,
+  "h2": 0.6263774101496864,
+  "gap_r2": 0.001404450448248219
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Flowering time at Aberdeen",
+  "gamma": 0.699247759251468,
+  "h2": 0.8016674716045339,
+  "gap_r2": 0.00185559664888495
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "FT ratio of Arkansas/Aberdeen",
+  "gamma": 0.7745182426682644,
+  "h2": 0.5409528395339287,
+  "gap_r2": 0.0013804902830605538
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "FT ratio of Faridpur/Aberdeen",
+  "gamma": 0.6591339177375767,
+  "h2": 0.5577686439917384,
+  "gap_r2": 0.0036934266513420472
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Culm habit",
+  "gamma": 0.9649467193468412,
+  "h2": 0.7700088836078448,
+  "gap_r2": 1.9968660293337157e-05
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Flag leaf length",
+  "gamma": 0.7334522498618077,
+  "h2": 0.7486541653152118,
+  "gap_r2": 0.001681931412111055
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Flag leaf width",
+  "gamma": 1.4481299692534322,
+  "h2": 0.8708618445149473,
+  "gap_r2": 0.0009044883654771999
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Panicle number per plant",
+  "gamma": 1.4681076719184605,
+  "h2": 0.8398317746588952,
+  "gap_r2": 0.001065399531507631
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Plant height",
+  "gamma": 1.168694776861591,
+  "h2": 0.8865280861116408,
+  "gap_r2": 0.0002148296067389871
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Panicle length",
+  "gamma": 0.880256877602719,
+  "h2": 0.7759951969762716,
+  "gap_r2": 0.000263583945519375
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Primary panicle branch number",
+  "gamma": 0.9672511611582495,
+  "h2": 0.6041310060796742,
+  "gap_r2": 2.0716082360395623e-05
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Seed number per panicle",
+  "gamma": 0.876997824438747,
+  "h2": 0.6501912160516548,
+  "gap_r2": 0.00033913646563746145
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Florets per panicle",
+  "gamma": 0.9319825429464472,
+  "h2": 0.7436702807472096,
+  "gap_r2": 8.424276805428029e-05
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Panicle fertility",
+  "gamma": 0.6930608812630221,
+  "h2": 0.7536303656804846,
+  "gap_r2": 0.002294760679294257
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Seed length",
+  "gamma": 0.8404157586819899,
+  "h2": 0.9999999988884124,
+  "gap_r2": 3.576093963204687e-12
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Seed width",
+  "gamma": 1.1046552048765914,
+  "h2": 0.9155061797099638,
+  "gap_r2": 7.472798660938686e-05
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Seed volume",
+  "gamma": 1.0210564976875842,
+  "h2": 0.9475125202149604,
+  "gap_r2": 2.091985239509068e-06
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Seed surface area",
+  "gamma": 0.9162224176670206,
+  "h2": 0.9679842417057848,
+  "gap_r2": 1.8337814359159135e-05
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Brown rice seed length",
+  "gamma": 0.9187455630577045,
+  "h2": 0.9940520884629489,
+  "gap_r2": 1.9660878285940746e-06
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Brown rice seed width",
+  "gamma": 0.9778927447744552,
+  "h2": 0.9380228954201776,
+  "gap_r2": 2.772260270158358e-06
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Brown rice surface area",
+  "gamma": 0.848442204221461,
+  "h2": 0.9999999997312501,
+  "gap_r2": 3.4191830222015956e-12
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Brown rice volume",
+  "gamma": 0.9703262826681575,
+  "h2": 0.9308021110336729,
+  "gap_r2": 5.6073472663187375e-06
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Seed length/width ratio",
+  "gamma": 0.9480756969855799,
+  "h2": 0.9677995228493005,
+  "gap_r2": 7.20573400801096e-06
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Brown rice length/width ratio",
+  "gamma": 0.9750743296037383,
+  "h2": 0.981929354163598,
+  "gap_r2": 8.177154178642723e-07
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Straighthead suseptability ",
+  "gamma": 1.0773118868228744,
+  "h2": 0.7604442046809138,
+  "gap_r2": 8.213008340039014e-05
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Amylose content",
+  "gamma": 0.7648859471087275,
+  "h2": 0.8924582938193588,
+  "gap_r2": 0.0006009555859887484
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Alkali spreading value",
+  "gamma": 0.6227114336252104,
+  "h2": 0.679106485937721,
+  "gap_r2": 0.0044358881837282885
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Protein content",
+  "gamma": 0.5334333790489327,
+  "h2": 0.7344549798119409,
+  "gap_r2": 0.0064945865717597456
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Year07Flowering time at Arkansas",
+  "gamma": 0.993536173838162,
+  "h2": 0.7603872780648264,
+  "gap_r2": 6.614424148089955e-07
+ },
+ {
+  "dataset": "rdp1",
+  "trait": "Year06Flowering time at Arkansas",
+  "gamma": 1.0657302447105605,
+  "h2": 0.7834882777137743,
+  "gap_r2": 5.6568845231479166e-05
+ },
+ {
+  "dataset": "sorghum",
+  "trait": "YLD",
+  "gamma": 0.9776467340279865,
+  "h2": 0.44347635737129876,
+  "gap_r2": 1.0014479972960334e-05
+ },
+ {
+  "dataset": "sorghum",
+  "trait": "MO",
+  "gamma": 1.174963256228458,
+  "h2": 0.7103045126622587,
+  "gap_r2": 0.0003710709273157461
+ },
+ {
+  "dataset": "sorghum",
+  "trait": "HT",
+  "gamma": 0.9280122233836452,
+  "h2": 0.8499153550348494,
+  "gap_r2": 3.435142049635306e-05
+ }
+]

@@ -1,0 +1,42 @@
+{
+ "rice": {
+  "n": 191,
+  "markers": 28368,
+  "traits": 4,
+  "n_min": 191,
+  "n_max": 191,
+  "covariates": false
+ },
+ "wheat": {
+  "n": 599,
+  "markers": 1278,
+  "traits": 4,
+  "n_min": 599,
+  "n_max": 599,
+  "covariates": false
+ },
+ "mice": {
+  "n": 1814,
+  "markers": 10346,
+  "traits": 19,
+  "n_min": 999,
+  "n_max": 1814,
+  "covariates": true
+ },
+ "rdp1": {
+  "n": 413,
+  "markers": 31397,
+  "traits": 31,
+  "n_min": 304,
+  "n_max": 403,
+  "covariates": false
+ },
+ "sorghum": {
+  "n": 451,
+  "markers": 56299,
+  "traits": 3,
+  "n_min": 451,
+  "n_max": 451,
+  "covariates": false
+ }
+}

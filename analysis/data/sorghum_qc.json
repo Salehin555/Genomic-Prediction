@@ -1,0 +1,23 @@
+{
+ "n_raw": 451,
+ "p_raw": 56299,
+ "values": [
+  -1.0,
+  0.0,
+  1.0
+ ],
+ "markers_callrate": 56299,
+ "individuals_callrate": 451,
+ "markers_final": 56299,
+ "mean_diag_G": 1.7839288199469443,
+ "traits": [
+  "YLD",
+  "MO",
+  "HT"
+ ],
+ "n_per_trait": {
+  "YLD": 451,
+  "MO": 451,
+  "HT": 451
+ }
+}

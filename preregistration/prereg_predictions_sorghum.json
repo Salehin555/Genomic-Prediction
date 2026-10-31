@@ -1,0 +1,49 @@
+{
+ "panel": "sorghum",
+ "written": "2026-10-29 09:05:09 Bangladesh Standard Time",
+ "rule": "09_Preregistration_New_Data.md section 4",
+ "traits": [
+  {
+   "dataset": "sorghum",
+   "trait": "YLD",
+   "n": 451,
+   "p_fixed": 1,
+   "gamma": 0.9776467340279865,
+   "lr": 0.0102147050969279,
+   "p_chi2": 0.9194966197619753,
+   "p_boot": 0.9154228855721394,
+   "h2": 0.4498706361403017,
+   "seconds": 31.48635983467102,
+   "category": "N",
+   "prediction": "no material difference: |delta| < 0.005, no significant gain"
+  },
+  {
+   "dataset": "sorghum",
+   "trait": "MO",
+   "n": 451,
+   "p_fixed": 1,
+   "gamma": 1.174963256228458,
+   "lr": 0.8175069261554313,
+   "p_chi2": 0.3659100917763918,
+   "p_boot": 0.3781094527363184,
+   "h2": 0.6532712078052677,
+   "seconds": 30.92133402824402,
+   "category": "N",
+   "prediction": "no material difference: |delta| < 0.005, no significant gain"
+  },
+  {
+   "dataset": "sorghum",
+   "trait": "HT",
+   "n": 451,
+   "p_fixed": 1,
+   "gamma": 0.9280122233836452,
+   "lr": 0.16748074460895168,
+   "p_chi2": 0.6823605238804406,
+   "p_boot": 0.7114427860696517,
+   "h2": 0.8594975846158376,
+   "seconds": 32.34409713745117,
+   "category": "N",
+   "prediction": "no material difference: |delta| < 0.005, no significant gain"
+  }
+ ]
+}
