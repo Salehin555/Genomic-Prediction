@@ -1,9 +1,8 @@
-python==3.12.7
 numpy==2.2.6
 scipy==1.16.3
 scikit-learn==1.6.1
 pandas==2.3.3
 matplotlib==3.10.5
-torch==2.8.0  # CPU build; only the DNNGP baseline
+torch==2.8.0  # CPU build; only the MLP baseline
 pyreadr==0.5.8
-numba  # Gibbs samplers (bayes_gibbs.py)
+numba==0.63.1  # Gibbs samplers (bayes_gibbs.py)

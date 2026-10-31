@@ -2493,7 +2493,7 @@
  },
  "e8.run_agreement": {
   "value": 0.12257972744400972,
-  "text": "12%",
+  "text": "13%",
   "claim": "K24",
   "source": "e8_scaling_run1/2.json"
  },

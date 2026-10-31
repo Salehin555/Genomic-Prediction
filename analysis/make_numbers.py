@@ -237,7 +237,7 @@ def practical():
     ratio = [r["power_CV_s"] / r["rrBLUP_CV_s"] for r in b if r["n"] >= 1000]
     put("e8.power_over_rrblup", [min(ratio), max(ratio)], f"{min(ratio):.2f}–{max(ratio):.2f}", "K24", "e8_scaling_run2.json")
     agree = max(abs(x[k] - y[k]) / y[k] for x, y in zip(a, b) if x["n"] >= 1000 for k in x if k.endswith("_s"))
-    put("e8.run_agreement", agree, f"{agree:.0%}", "K24", "e8_scaling_run1/2.json")
+    put("e8.run_agreement", agree, f"{int(np.ceil(100 * agree))}%", "K24", "e8_scaling_run1/2.json")   # an upper bound: "within 13%"
     # R2.8: cost of the safe selector relative to tuned rrBLUP, and growth of the eigendecomposition
     sr = [r["safe_CV_s"] / r["rrBLUP_CV_s"] for r in b if "safe_CV_s" in r]
     put("e8.safe_over_rrblup", [min(sr), max(sr)], f"{min(sr):.1f} to {max(sr):.1f}", "K24", "e8_scaling_run2.json")

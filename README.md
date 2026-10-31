@@ -5,7 +5,8 @@ Test, and Its Limits* by Md. Salehin Seyam, Abdur Rahman and Zhaohua Peng.
 
 GBLUP (equivalently rrBLUP) shrinks each eigenvector of the genomic relationship matrix (GRM) by a fixed rule. SAS-BLUP
 learns this shrinkage with a two-parameter power filter and chooses between the filter and rrBLUP on held-out data. A
-restricted-likelihood ratio test checks the GBLUP assumption (gamma = 1) before any model is fitted. The scripts here
+restricted-likelihood ratio test checks the GBLUP assumption (gamma = 1); it uses the phenotype but is computed before
+the predictive model is fitted. The scripts here
 reproduce every number, table and figure of the paper from the stored results.
 
 ## Contents
@@ -23,7 +24,7 @@ Core methods: `analysis/spectral_filters.py` (rrBLUP, the power filter and the s
 
 ## Quick start
 
-Python 3.12 and a CPU are enough.
+Python 3.12 (tested with 3.12.7) and a CPU are enough.
 
 ```
 pip install -r requirements.txt
